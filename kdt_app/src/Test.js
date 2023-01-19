@@ -6,6 +6,7 @@ function Test({text}) {
     <div>
       <h1>{text} 여기에 값이 표현됩니다.</h1>
       <InnerTest innerTxt = {text}/>
+      <InnerTest innerTxt = 'ABCD'/>
     </div>
   );
 }
