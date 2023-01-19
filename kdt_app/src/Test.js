@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Test() {
+function Test(props) {
   return (  
     <div>
-      <h1>React App</h1>
+      <h1>{props.text} 여기에 값이 표현됩니다.</h1>
     </div>
   );
 }
