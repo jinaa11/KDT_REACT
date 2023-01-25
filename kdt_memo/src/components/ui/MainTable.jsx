@@ -24,7 +24,10 @@ function MainTable() {
             <tr key={word.id}>
               <td>{word.id}</td>
               <td>
-                <Forms.Check type="checkbox" />
+                <Forms.Check type="checkbox" 
+                disabled={word.isDone}
+                defaultChecked={word.isDone}
+                />
               </td>
               <td>{word.eng}</td>
               <td>{word.kor}</td>
