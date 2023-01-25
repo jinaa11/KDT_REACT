@@ -12,6 +12,7 @@ function MainTable() {
 
   // 실행되면 데이터 호출, isCheck가 바뀌면 호출
   useEffect(() => {
+    console.log(isCheck);
     fetch('http://localhost:3001/words')
       // 제이슨으로 풀어내고
       .then(res => res.json())

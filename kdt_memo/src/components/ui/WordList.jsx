@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 function WordList({ word, isCheck, setIsCheck }) {
    const [isView, setIsView] = useState(false);
 
-   const handleView = () => {
+   const handleView = (e) => {
       setIsView(!isView);
    }
 
@@ -30,6 +30,16 @@ function WordList({ word, isCheck, setIsCheck }) {
       })
    }
 
+   const handleDelete = () => {
+      fetch(`http://localhost:3001/words/${word.id}`, {
+         method: 'DELETE',
+      }).then(res => {
+         if(res.ok) {
+            setIsCheck(!isCheck);
+         }
+      }).catch(err => console.log(err))
+   }
+
    return (
       <tr key={word.id}>
          <td>{word.id}</td>
@@ -44,8 +54,8 @@ function WordList({ word, isCheck, setIsCheck }) {
          <td>{word.eng}</td>
          <td>{isView ? word.kor : ""}</td>
          <td>
-            <Button variant="primary" onClick={handleView}>뜻 {isView ? "감추기" : "보기"}</Button>{' '}
-            <Button variant="secondary">삭제</Button>
+            <Button variant="primary" onClick={handleView}>답 {isView ? "감추기" : "보기"}</Button>{' '}
+            <Button variant="secondary" onClick={handleDelete}>삭제</Button>
          </td>
       </tr>
    );
