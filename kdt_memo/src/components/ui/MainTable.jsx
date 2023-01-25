@@ -22,6 +22,7 @@ function MainTable() {
         setData(data)
       })
       .catch(err => console.log(err));
+      // [isCheck]로 WordList에 변경 값이 생기면 호출
   }, [isCheck]);
 
   return (
