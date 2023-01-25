@@ -19,18 +19,22 @@ function MainTable() {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>
-            <Forms.Check type="checkbox" />
-          </td>
-          <td>apple</td>
-          <td>사과</td>
-          <td>
-            <Button variant="primary">답 보기</Button>{' '}
-            <Button variant="secondary">삭제</Button>{' '}
-          </td>
-        </tr>
+        {
+          data.words.map(word => (
+            <tr key={word.id}>
+              <td>{word.id}</td>
+              <td>
+                <Forms.Check type="checkbox" />
+              </td>
+              <td>{word.eng}</td>
+              <td>{word.kor}</td>
+              <td>
+                <Button variant="primary">답 보기</Button>{' '}
+                <Button variant="secondary">삭제</Button>{' '}
+              </td>
+            </tr>
+          ))
+        }
       </tbody>
     </Table>
   );
