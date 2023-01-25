@@ -1,19 +1,22 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
+
 // import data from '../../db/data.json'
 import WordList from './WordList';
 
 
-function MainTable() {
+function MainTable({dayId}) {
   // State 추가
   const [data, setData] = useState();
   const [isCheck, setIsCheck] = useState(false);
 
+
   // 실행되면 데이터 호출, isCheck가 바뀌면 호출
   useEffect(() => {
+    console.log({dayId})
     console.log(isCheck);
-    fetch('http://localhost:3001/words')
+    fetch(`http://localhost:3001/words?day=${dayId}`)
       // 제이슨으로 풀어내고
       .then(res => res.json())
       // data에 옮겨 담음

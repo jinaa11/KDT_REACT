@@ -125,6 +125,13 @@
       "eng": "mango",
       "kor": "망고",
       "isDone": false
+    },
+    {
+      "day": 0,
+      "eng": "오렌지",
+      "kor": "orange",
+      "isDone": false,
+      "id": 13
     }
   ]
 }
