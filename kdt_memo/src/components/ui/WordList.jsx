@@ -22,7 +22,7 @@ function WordList({ word }) {
          <td>{word.eng}</td>
          <td>{isView ? word.kor : ""}</td>
          <td>
-            <Button variant="primary" onClick={handleView}>답 보기</Button>{' '}
+            <Button variant="primary" onClick={handleView}>뜻 {isView ? "감추기" : "보기"}</Button>{' '}
             <Button variant="secondary">삭제</Button>
          </td>
       </tr>
