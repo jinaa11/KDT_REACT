@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -13,6 +14,10 @@ function WordForm() {
          isDone: false
       }
    );
+
+   useEffect(() => {
+      console.log(word);
+   }, []);
 
    const handleSubmit = (e) => {
       // 새로고침 막힘
