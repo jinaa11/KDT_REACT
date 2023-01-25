@@ -13,7 +13,10 @@ function MainTable() {
     // 제이슨으로 풀어내고
     .then(res=>res.json())
     // data에 옮겨 담음
-    .then(data=>setData(data))
+    .then(data=> {
+      console.log(data);
+      setData(data)
+    })
     .catch(err=>console.log(err));
   }, []);
 
@@ -30,7 +33,8 @@ function MainTable() {
       </thead>
       <tbody>
         {
-          data.words.map(word => (
+          // 데이터가 있으면 실행
+          data && data.map(word => (
             <WordList key={word.id} word={word} />
           ))
         }
