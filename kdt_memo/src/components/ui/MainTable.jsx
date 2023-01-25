@@ -1,17 +1,21 @@
 import Table from 'react-bootstrap/Table';
 import Forms from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import data from '../../db/data.json'
+
 
 function MainTable() {
+  console.log(data);
+
   return (
     <Table striped bordered hover>
       <thead>
         <tr>
-          <th>id</th>
-          <th>check</th>
-          <th>english</th>
-          <th>korean</th>
-          <th>controller</th>
+          <th>Id</th>
+          <th>Check</th>
+          <th>English</th>
+          <th>Korean</th>
+          <th>Controller</th>
         </tr>
       </thead>
       <tbody>
