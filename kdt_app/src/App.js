@@ -1,28 +1,74 @@
-import {useState} from "react";
-import Test from "./Test";
+import React from 'react';
+import Footer from "./components/layouts/Footer";
+import Header from "./components/layouts/Header";
+import FruitsPage from "./FruitsPage";
+import Main from "./pages/Main";
+import Day from './practice/Day';
+import DayList from './practice/DayList';
+// import Header from './practice/Header';
+import Sample from "./Sample";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import EmptyPage from './practice/EmptyPage';
+
 
 function App() {
-  // useState(초기값); => 상태 변화
-const [number, setNumber] = useState(0);
-
-const Increment =() => {
-  setNumber(number + 1);
-  console.log(number);
-};
-
-const Decrement = () => {
-  setNumber(number - 1);
-  console.log(number);
-};
 
   return (
-    <div>
-      <h1>{number}</h1>
-      <button onClick={Increment}>Increment</button>
-      <button onClick={Decrement}>Decrement</button>
-      <Test text = {number}/>
-    </div>
+    <>
+
+    </>
   );
+
+  // return (
+  //   <>
+  //     <BrowserRouter>
+  //       <Header />
+  //       <Routes>
+  //         <Route path='/' element={<DayList />} />
+  //         <Route path='/day/:day' element={<Day />} />
+  //         <Route path='*' element={<EmptyPage />} />
+  //       </Routes>
+  //     </BrowserRouter>
+  //   </>
+  // );
+
+
+  // const [name, setName] = useState("Jina");
+
+  // return(
+  //   <>
+  //     <Sample name = {name}>Name</Sample>
+  //   </>
+
+  // );
+
+  // const fruits = [
+  //   {id: 1, name: '사과', quantity: 9, isView: 1},
+  //   {id: 2, name: '바나나', quantity: 3, isView: 0},
+  //   {id: 3, name: '포도', quantity: 7, isView: 1},
+  //   {id: 4, name: '딸기', quantity: 1, isView: 0},
+  //   {id: 5, name: '복숭아', quantity: 8, isView: 1}
+  // ];
+
+  // return (
+  //   <>
+  //   {
+  //     fruits.map((item) => (
+  //       <FruitsPage
+  //         key={item.id}
+  //         item={item}
+  //       />
+  //     ))
+  //   }
+  // </>
+  // );
+
+  {/* <div id="wrap">
+        <Header/>
+        <Main/>
+        <Footer/>
+      </div> */}
+
 }
 
 export default App;
