@@ -1,27 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Cart() {
+  const userId = 1;
+  const [cartDatas, sertCartDatas] = useState();
 
-  let x = 10;
-  const [number, setNumber] = useState(0);
+  useEffect(() => {
+    fetch(`http://localhost:3001/carts?userId=${userId}`)
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+      });
+  });
 
-  const add = () => {
-    setNumber(number + 1)
-    console.log(number)
-  }
-
-  const minus = () => {
-    setNumber(number - 1)
-    console.log(number)
-  }
-
-  return ( 
+  return (
     <>
-    <h2>cart {number}</h2>
-    <button onClick={add}>+</button>
-    <button onClick={minus}>-</button>
+
     </>
-   );
+  );
 }
 
 export default Cart;

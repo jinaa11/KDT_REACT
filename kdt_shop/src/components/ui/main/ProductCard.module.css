@@ -1,17 +1,24 @@
 .productCard {
-   margin: auto;
+   width: 100%;
    margin-bottom: 50px;
 
 }
 
 .productCard img {
    width: 100%;
+   border-radius: 5px;
    height: auto;
 }
 
+.title {
+   font-size: 1.2rem;
+   font-weight: bold;
+   margin-top: 10px;
+}
+
+
 .cartBtn {
    width: 150px;
-   height: 30px;
    background-color: #222222;
    border-radius: 5px;
    color: white;

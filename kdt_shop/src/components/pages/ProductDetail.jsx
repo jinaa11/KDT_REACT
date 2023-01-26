@@ -7,14 +7,14 @@ function ProductDetail() {
    const [product, setProduct] = useState();
 
    useEffect(() => {
-      fetch(`https://dummyjson.com/products/${id}`)
+      fetch(`http://localhost:3001/products/${id}`)
          .then(res => res.json())
          .then(data => {
             console.log(data);
             setProduct(data)
          })
          .catch(err => console.log(err))
-   }, [id]);
+   }, []);
 
    return (
       <div>
@@ -33,7 +33,8 @@ function ProductDetail() {
                   <p>{product.category}</p>
                   {
                      product.images.map((image, idx) => (
-                        <img src={image}
+                        <img
+                           src={image}
                            alt={`${product.description}` + `${idx}`}
                            key={idx}
                         />

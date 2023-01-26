@@ -11,6 +11,11 @@
    width: 25vw;
 }
 
+.logo a {
+   color: #000;
+   text-decoration: none;
+ }
+
 .search {
    /* vw : 폭 */
    width: 50vw;
