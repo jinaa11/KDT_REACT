@@ -12,7 +12,8 @@ function HeaderBottom() {
          <ul>
             {
                gnbMenu.map(menu => (
-                  // 클래스네임은 같은 주소 판단하기 위해 useLocation()으로 pathname 부르기
+                  // 클래스네임은 링크와 열린 페이지의 같은 주소 판단하기 위해
+                  //  useLocation()으로 pathname 부르기
                   <li key={menu.id} className={menu.link === location.pathname ? `${style.active}` : ''}>
                      <Link to ={menu.link}>{menu.name}</Link></li>
                ))
