@@ -6,3 +6,8 @@ body {
 .appWrap {
    width: 100%;
 }
+
+ul {
+   margin: 0px !important;
+   padding: 0px !important;
+}

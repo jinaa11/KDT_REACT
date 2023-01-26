@@ -8,6 +8,7 @@
 
 .logo {
    font-size: 1.2rem;
+   width: 25vw;
 }
 
 .search {
@@ -25,3 +26,7 @@
    width: 100%;
    height: 40px;
 }
+
+.cartIcon {
+   width: 15vw;
+ }
