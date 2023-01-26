@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
+import style from './MainSection.module.css';
 
 function MainSection() {
    const [productData, setProductData] = useState([]);
@@ -17,7 +18,7 @@ function MainSection() {
    }, []);
 
    return (
-      <section className='mainSection'>
+      <section className={style.mainSection}>
          {
             productData && productData.map(product => (
                <ProductCard

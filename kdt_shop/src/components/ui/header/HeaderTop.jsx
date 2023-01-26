@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState} from 'react';
 import style from './HeaderTop.module.css'
 // import Lottie from 'react-lottie';
 import * as animationData from '../../lottie/Cart.json'
@@ -15,7 +15,6 @@ function HeaderTop() {
    };
 
    const [searchWord, setSearchWord] = useState('test');
-   const searchRef = useRef('');
 
    const handleSubmit = (e) => {
       e.preventDefault();
