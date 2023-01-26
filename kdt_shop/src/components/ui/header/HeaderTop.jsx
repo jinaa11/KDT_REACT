@@ -5,11 +5,11 @@ function HeaderTop() {
    return (
       <div className={style.headerTopWrap}>
          <h1 className={style.logo}>SSG.COM</h1>
-         <div className='search'>
-            <input type="text" placeholder='Search' />
+         <div className={style.search}>
+            <input type="text"/>
          </div>
          <div className='cartIon'>
-            장바구니 아이콘
+            장
          </div>
       </div>
    );

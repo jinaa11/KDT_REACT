@@ -9,3 +9,19 @@
 .logo {
    font-size: 1.2rem;
 }
+
+.search {
+   /* vw : 폭 */
+   width: 50vw;
+}
+
+.search input {
+   /* padding을 넣어도 박스 사이즈 고정시키기 */
+   box-sizing: border-box;
+   background-color: #f5f5f5;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 20px;
+   width: 100%;
+   height: 40px;
+}

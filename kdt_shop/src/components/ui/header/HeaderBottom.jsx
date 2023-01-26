@@ -4,7 +4,6 @@ import { gnbMenu } from '../../../data/gnbMenu';
 import { Link, useLocation } from 'react-router-dom';
 
 function HeaderBottom() {
-
    const location = useLocation();
 
    return (
