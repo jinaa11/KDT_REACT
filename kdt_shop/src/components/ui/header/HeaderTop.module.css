@@ -1,0 +1,11 @@
+.headerTopWrap {
+   display: flex;
+   justify-content: space-between;
+   /* 각각의 아이템 높이 정렬 */
+   align-items: center;
+   padding: 5px 14px;
+}
+
+.logo {
+   font-size: 1.2rem;
+}

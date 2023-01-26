@@ -6,9 +6,11 @@ import Main from './components/pages/Main';
 import ProductDetail from './components/pages/ProductDetail';
 import ProductList from './components/pages/ProductList';
 import Wish from './components/pages/Wish';
+import './App.css';
+
 function App() {
   return (
-    <div className='container'>
+    <div className='appWrap'>
       <BrowserRouter>
         <Header />
         <Routes>
