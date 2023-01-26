@@ -1,9 +1,20 @@
 .productCard {
    margin: auto;
+   margin-bottom: 50px;
 
 }
 
 .productCard img {
    width: 100%;
    height: auto;
+}
+
+.cartBtn {
+   width: 150px;
+   height: 30px;
+   background-color: #222222;
+   border-radius: 5px;
+   color: white;
+   text-align: center;
+   padding: 10px;
 }
