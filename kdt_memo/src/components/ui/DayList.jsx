@@ -19,8 +19,8 @@ function DayList() {
          <ul>
             {
                days && days.map(day => {
-                  <Link to={ `/list/${day.day}`}>
-                     <li key={day.id}>Day {day.day}</li>
+                  <Link to={ `/list/${day.day}`} key={day.id}>
+                     <li >Day {day.day}</li>
                   </Link>
                })
             }

@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
-
 // import data from '../../db/data.json'
 import WordList from './WordList';
-
 
 function MainTable({dayId}) {
   // State 추가
