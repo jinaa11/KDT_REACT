@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import style from './ProductCard.module.css';
 import { Link, useNavigate } from 'react-router-dom';
+import { QtyContext } from '../../context/QtyContext';
 
 function ProductCard({ product }) {
-
+   const contextData = useContext(QtyContext);
    const userId = 1;
    const navigate = useNavigate();
-
 
    const handleAddCart = () => {
       // 해당 주소로 데이터 보내기
@@ -24,8 +24,9 @@ function ProductCard({ product }) {
          .then(res => {
             res.json();
             if (res.ok) {
+               contextData.setCartQty(contextData.cartQty + 1)
                window.alert('Added to cart');
-               navigate('/cart')
+               navigate('/cart');
             }
          })
          .catch(err => console.error(err));

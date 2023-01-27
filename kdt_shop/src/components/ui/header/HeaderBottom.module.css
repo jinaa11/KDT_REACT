@@ -2,6 +2,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   /* important는 가장 우선 시 됨 */
    padding: 0px !important;
    margin: 0px !important;
 }

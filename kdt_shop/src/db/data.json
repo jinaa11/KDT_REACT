@@ -2386,40 +2386,34 @@
   ],
   "carts": [
     {
-      "id": 1,
-      "userId": 1,
       "productId": 1,
-      "qty": 1
-    },
-    {
-      "id": 2,
       "userId": 1,
-      "productId": 2,
-      "qty": 1
+      "qty": 4,
+      "id": 11
     },
     {
-      "productId": 3,
+      "productId": 7,
       "userId": 1,
       "qty": 1,
-      "id": 3
+      "id": 13
     },
     {
-      "productId": 4,
+      "productId": 13,
       "userId": 1,
       "qty": 1,
-      "id": 4
+      "id": 14
     },
     {
-      "productId": 12,
+      "productId": 14,
       "userId": 1,
       "qty": 1,
-      "id": 5
+      "id": 15
     },
     {
-      "productId": 19,
+      "productId": 5,
       "userId": 1,
       "qty": 1,
-      "id": 6
+      "id": 16
     }
   ]
 }
