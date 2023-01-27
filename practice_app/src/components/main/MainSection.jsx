@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ProductCard from './ProductCard';
 
 function MainSection() {
-   return ( 
-      <section>
+   const [productData, setProductData] = useState([]);
 
+   return ( 
+      <section className='mainSection'>
+         <ProductCard />
       </section>
     );
 }
