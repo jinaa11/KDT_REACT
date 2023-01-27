@@ -1,8 +1,11 @@
 import React from 'react';
+import MainSection from '../main/MainSection';
 
 function Main() {
    return (
-      <>Main</>
+      <div className='mainWrap'>
+         <MainSection />
+      </div>
    );
 }
 
