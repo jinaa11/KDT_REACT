@@ -1,0 +1,27 @@
+.headerTopWrap {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* margin-right: 10px; */
+   padding: 0px;
+   margin: 0px;   
+}
+
+.logo {
+   width: 40px;
+   height: 40px;
+   margin: 0px;
+   padding: 0px;
+
+}
+
+.gnb ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.gnb ul li {
+   list-style: none;
+   padding: 5px 14px;
+}
