@@ -1,0 +1,17 @@
+.productCard {
+   width: 50%;
+   margin-top: 60px;
+   float: left;
+
+}
+
+.productCard img {
+   width: 100%;
+   height: auto;
+   /* margin-top: 10px; */
+}
+
+.title {
+   text-align: center;
+   font-size: 0.9rem;
+}
