@@ -10,7 +10,7 @@ export const gnbMenu = [
       link: '/cart'
    },
    {
-      id: 1,
+      id: 3,
       name: 'Story',
       link: '/story'
    }
