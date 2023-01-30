@@ -25,3 +25,8 @@
    list-style: none;
    padding: 5px 14px;
 }
+
+.gnb ul li a {
+   text-decoration: none;
+   color: black;
+}
